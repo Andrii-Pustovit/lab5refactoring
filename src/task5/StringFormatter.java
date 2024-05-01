@@ -1,6 +1,6 @@
 package task5;
 
-public class StringUtils {
+public class StringFormatter {
 
     public static String formatString(String input) {
 

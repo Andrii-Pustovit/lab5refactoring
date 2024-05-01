@@ -2,10 +2,14 @@ package task3;
 
 public class Calculator {
 
-    public static double add(double a, double b) {
+    private Math math;
 
-        return Math.addExact(a, b);
-
+    public Calculator() {
+        this.math = new Math();
     }
 
+    public double add(double a, double b) {
+        return math.addExact(a, b);
+    }
 }
+

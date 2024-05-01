@@ -1,11 +1,19 @@
 package task7;
 
-public class Animal {
+abstract class Animal {
+    public abstract void makeSound();
+}
 
-    public void bark() {
-
-        System.out.println("Animal is barking");
-
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Dog is barking");
     }
+}
 
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Cat is meowing");
+    }
 }
